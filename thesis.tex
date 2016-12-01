@@ -1,0 +1,28 @@
+%#BIBTEX pbibtex -kanji=utf8 thesis
+\documentclass[12pt]{jreport}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{color}
+\usepackage{ascmac}
+%\usepackage{fancybx}
+\usepackage{comment}
+\usepackage{mathtools}
+\usepackage{layout}
+\usepackage[hang,bf,labelsep=period,figurename=図. , tablename=表., singlelinecheck=false]{caption} 
+\usepackage[dvipdfmx,colorlinks=true]{hyperref}
+\title{重力波望遠鏡KAGRAのための\\地殻変動モニターの開発}
+\author{三代浩世希}
+\date{2016/1/05}
+\usepackage{version}	% required for `\comment' (yatex added)
+\usepackage{amsmath}	% required for `\pmatrix' (yatex added)
+\begin{document}
+\maketitle
+\tableofcontents
+\input{chapter1}
+\input{chapter2}
+\input{chapter3}
+\input{appendix}
+\layout
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

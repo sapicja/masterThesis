@@ -1,0 +1,234 @@
+\documentclass[a4j]{jreport}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%GRAPHICS
+%\usepackage[dvipdfm]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FONT
+\usepackage{helvet}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%HYPERREF
+\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\usepackage[dvipdfm,bookmarks=true,bookmarksnumbered=true,colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,pagecolor=blue,urlcolor=blue]{hyperref}
+\urlstyle{rm}
+\usepackage[all]{hypcap} %tableやfigureでリンクの位置がcaptionになってしまうのを修正
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%HEADER/FOOTER
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter\space#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\space#1}}
+
+\lhead{\nouppercase{\leftmark}}
+\chead{}
+\rhead{\nouppercase{\rightmark}}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DEFINITIONS
+\newcommand{\shiki}[1]{式(\ref{#1})}
+\newcommand{\zu}[1]{図\ref{#1}}
+\newcommand{\unit}[1]{\ \rm{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CHAPTER SETTINGS
+\newcommand{\chapnumfont}[1]{\fontsize{25mm}{0pt}\selectfont\sf\textbf{#1}}  % chapter見出しの数字/アルファベットのフォント
+\newcommand{\chapfont}[1]{\fontsize{10mm}{0pt}\selectfont{\bf\textsf{#1}}}  % chapter見出しのフォント
+\newcommand{\chaptername}{Chapter}  %欧文の場合消す
+\renewcommand{\prechaptername}{}  %欧文の場合消す
+\renewcommand{\postchaptername}{}  %欧文の場合消す
+\renewcommand{\appendixname}{}  %欧文の場合消す
+
+\renewcommand{\contentsname}{Contents}  %欧文の場合消す
+\renewcommand{\bibname}{Bibliography}  %欧文の場合消す
+
+\makeatletter
+
+%chapter見出し
+\def\@makechapterhead#1{%
+  \vbox to 4.5cm{%
+    \vskip5mm
+    \hfill
+    {\chapfont{\chaptername\space}}%  %欧文の場合は{\Huge\sc\@chapapp\space}とする
+    {\chapnumfont{\thechapter}}%
+    \par\prevdepth-1000pt
+    \vskip5mm
+    {\Huge\bfseries\hfill#1\par}%
+    \vss
+    \hrule height.5mm depth\z@
+    }%
+    \vskip15mm
+    }%
+
+    %章番号がはみ出すchapter見出し
+    %\def\@makechapterhead#1{%
+    %  \vbox to 4.2cm{%
+    %    \vskip15mm
+    %    \hfill
+    %    {\chapfont{\chaptername\space}}%  %欧文の場合は{\Huge\sc\@chapapp\space}とする
+    %    \par\prevdepth-1000pt
+    %    \vskip5mm
+    %    {\Huge\bfseries\hfill#1\par}%
+    %    \vss
+    %    \hrule height.5mm depth\z@
+    %  }%
+    %  \vskip-37mm\hskip147mm {\chapnumfont\thechapter} \vskip20mm
+    %  \vskip15mm
+    %}%
+
+    %chapter*見出し(目次、参考文献含む)
+    \def\@makeschapterhead#1{%
+    \vbox to 2cm{%
+    \vskip5mm
+    \hfill
+    {\chapfont{#1}}
+    \par\prevdepth-1000pt
+    \vskip5mm
+    \vss
+    \hrule height.5mm depth\z@
+    }%
+    \vskip15mm
+    }%
+
+    %chapter*の見出しへの目次からのhyperrefリンク先の位置修正 http://www.tex.ac.uk/cgi-bin/texfaq2html?label=tocbibind
+    \def\@schapter#1{%
+    \cleardoublepage
+    \phantomsection
+                 \if@twocolumn
+                   \@topnewpage[\@makeschapterhead{#1}]%
+                   \else
+                   \@makeschapterhead{#1}%
+                   \@afterheading
+                   \fi}
+
+		   %chapterレベルのtableofcontentsでの表示形式
+		   \renewcommand{\l@chapter}[2]{%    %欧文の場合一連を消す
+  		   \ifnum \c@tocdepth >\m@ne
+    		   \addpenalty{-\@highpenalty}%
+    		   \addvspace{1.0em \@plus\p@}%
+    		   \begingroup
+      		   \parindent\z@ \rightskip\@pnumwidth \parfillskip-\rightskip
+      		   \leavevmode\bfseries
+      		   \setlength\@lnumwidth{1.5zw}%
+      		   \advance\leftskip\@lnumwidth \hskip-\leftskip
+      		   #1\nobreak\hfil\nobreak\hbox to\@pnumwidth{\hss#2}\par
+      		   \penalty\@highpenalty
+    		   \endgroup
+  		   \fi}
+
+		   \makeatother
+
+		   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%TITLE PAGE
+		   \title{{\bf \Huge 大型重力波望遠鏡KAGRAのための}\\ \vspace{1zh}{\bf
+		   \Huge 地殻変動補償システムの開発 }\\ \vspace{15zh}}
+		   \author{\LARGE 東京大学大学院 理学系研究科 物理学専攻 ??????\\ \LARGE 三
+		   代浩世希}
+		   \date{2016年12月6日作成 \\ \西暦\today 更新}    %欧文の場合\todayのみ
+
+
+		   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%MAIN
+		   \begin{document}
+		   \maketitle
+		   \pagenumbering{roman}
+		   \tableofcontents
+
+\chapter*{Abstract} \addcontentsline{toc}{chapter}{要約}
+pagenumberingちぇっく。
+
+\chapter*{Glossary} \addcontentsline{toc}{chapter}{記号・略語一覧}
+\begin{tabbing}
+ 012\=0123456789\=0123456789\kill
+ {\Large 記号}\\
+ \> $c$ \> 光速度 $= 299792458\unit{m/s}$ \\
+ \\
+ {\Large 略語}\\
+ \> \bf{abbr.} \> abbreviation \\
+ \> \bf{KABJ} \> Kouiuno Aruto Benri Jane? \\
+\end{tabbing}
+
+\chapter{レーザー干渉計型重力波望遠鏡}
+\pagenumbering{arabic}
+重力波（じゅうりょくは、英語 gravitational wave）は、一般相対性理論において予言される波動であり、時空の曲率（ゆがみ）の時間変動が波動として光速で伝播する現象である。\par
+重力により発生する液体表面の流体力学的な重力波 (gravity wave) とは異なる。
+
+ \section{せくしょん　リンク色のチェック}
+ jreport.clsです\footnote{欧文の場合はどう変更すればいいかは、ソースファイルに書いてあります。このテンプレートの場合、欧文の方がより簡単になります。}。\par
+ 参考文献に参考にしたサイトあります\cite{a}。\par
+ \shiki{eq}より\zu{fig1}となる。
+
+ \clearpage
+
+  \subsection{さぶせくしょん}
+   \subsubsection{さぶさぶせくしょん}
+
+  \subsection{きれいな図}
+  \zu{fig1}はPythonのmatplotlibで描きました。\par
+  \zu{fig2}はPower Pointで描き、仮想EPSプリンタで出力しました。数式はPower PointのアドインpptTeXで書いてます。
+  \begin{figure}[H]
+   \begin{center}
+    %    \includegraphics[width=120mm]{examplematplotlib.eps}
+   \end{center}
+   \caption{matplotlib} \label{fig1}
+  \end{figure}
+
+  \begin{figure}[H]
+   \begin{center}
+    %    \includegraphics[width=80mm]{exampleppt2eps.eps}
+   \end{center}
+   \caption{PowerPoint} \label{fig2}
+  \end{figure}
+
+
+ \section{せくしょんtwo}
+  \subsection{へっだーちぇっく}
+  \begin{equation} \label{eq}
+   %H=e^{ad}
+  \end{equation}
+  
+\chapter{地殻変動補償システム}
+\pagenumbering{arabic}
+
+ \section{レーザ干渉計型歪み計}
+  \subsection{設計感度}
+  
+  \subsection{入射レーザ}
+  \subsection{光学系}
+   \subsubsection{モードマッチ}
+   
+  \subsection{データ取得系}
+   \subsubsection{}
+
+
+   
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%APPENDIX
+  \appendix
+  \renewcommand{\chaptername}{Appendix}  %欧文の場合消す
+\chapter{ほい}
+ \section{ほいせくしょん}
+  \subsection{ほいさぶせくしょん}
+  \begin{equation}
+   T=e^{st}
+  \end{equation}
+
+
+\chapter{ほいほい}
+あぺんでぃくす
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%BIBLIOGRAPHY
+\begin{thebibliography}{9} \addcontentsline{toc}{chapter}{参考文献}
+ \bibitem{a}chapterhead \url{http://nsa.kpu-m.ac.jp/gijutu/tex/howto-tex.php}
+ \bibitem{b}fancyhdr \url{http://osksn2.hep.sci.osaka-u.ac.jp/~naga/miscellaneous/tex/tex-tips1.html}
+ \bibitem{c}hyperref with chapter* \url{http://www.tex.ac.uk/cgi-bin/texfaq2html?label=tocbibind}
+ \bibitem{d}href \url{http://en.wikibooks.org/wiki/LaTeX/Hyperlinks}
+\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ACKNOWLEDGEMENTS
+\chapter*{Acknowledgements} \addcontentsline{toc}{chapter}{謝辞}
+とにかくありがとう！
+
+		   \end{document}

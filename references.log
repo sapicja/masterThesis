@@ -1,0 +1,387 @@
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2016.1.27)  23 NOV 2016 20:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**references.bib
+(./references.bib
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2015/01/01> patch level 0)
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 @
+     article{peterson1993observations,
+? 
+! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.1 @
+     article{peterson1993observations,
+? 
+
+Overfull \hbox (168.58366pt too wide) in paragraph at lines 1--13
+[]\OT1/cmr/m/n/10 @articlepeterson1993observations,
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (75.41684pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 tle=Observations
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 mod-
+ []
+
+
+Overfull \hbox (10.55556pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 el-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (18.44444pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 seis-
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 mic
+ []
+
+
+Overfull \hbox (23.33337pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (30.58342pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 ground
+ []
+
+
+Overfull \hbox (24.50005pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 noise,
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 au-
+ []
+
+
+Overfull \hbox (66.63902pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 thor=Peterson,
+ []
+
+
+Overfull \hbox (15.69449pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Jon
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 oth-
+ []
+
+
+Overfull \hbox (15.08334pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 ers,
+ []
+
+
+Overfull \hbox (48.9168pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 year=1993,
+ []
+
+
+Overfull \hbox (20.00005pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 pub-
+ []
+
+
+Overfull \hbox (44.25009pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 lisher=US
+ []
+
+
+Overfull \hbox (15.625pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Ge-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 o-
+ []
+
+
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 log-
+ []
+
+
+Overfull \hbox (6.11111pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 cal
+ []
+
+
+Overfull \hbox (18.36115pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Sur-
+ []
+
+
+Overfull \hbox (14.72226pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 vey
+ []
+
+
+Overfull \hbox (112.50038pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 @bookknuth1986texbook,
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (36.11118pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 tle=The
+ []
+
+
+Overfull \hbox (24.86115pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 TEX-
+ []
+
+
+Overfull \hbox (24.16676pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 book,
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 au-
+ []
+
+
+Overfull \hbox (56.97238pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 thor=Knuth,
+ []
+
+
+Overfull \hbox (20.00005pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 D.E.
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (27.91675pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Bibby,
+ []
+
+
+Overfull \hbox (10.41669pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 D.
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (29.44453pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Makai,
+ []
+
+
+Overfull \hbox (9.16669pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 I.,
+ []
+
+
+Overfull \hbox (48.9168pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 year=1986,
+ []
+
+
+Overfull \hbox (87.08353pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 publisher=Addison-
+ []
+
+
+Overfull \hbox (30.33337pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Wesley
+ []
+
+
+Overfull \hbox (25.69447pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 Read-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 ing,
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 1--13
+\OT1/cmr/m/n/10 MA
+ []
+
+)
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+! Interruption.
+<*> 
+    
+? 
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*end
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> e
+     nd
+? end
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*x
+
+*X
+
+*
+
+Overfull \hbox (35.55559pt too wide) detected at line 0
+[]\OT1/cmr/m/n/10 end
+ []
+
+
+Overfull \hbox (5.2778pt too wide) detected at line 0
+\OT1/cmr/m/n/10 x
+ []
+
+
+Overfull \hbox (7.50002pt too wide) detected at line 0
+\OT1/cmr/m/n/10 X 
+ []
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+! Emergency stop.
+<*> ^^@
+       
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 493777
+ 58 string characters out of 6151334
+ 54434 words of memory out of 5000000
+ 3593 multiletter control sequences out of 15000+600000
+ 7519 words of font info for 31 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 5i,0n,4p,79b,14s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

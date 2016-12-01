@@ -1,0 +1,5 @@
+PWD /Users/miyo_mac/Documents/ICRR/masterTheis
+INPUT /opt/local/etc/texmf/texmf.cnf
+INPUT /opt/local/var/db/texmf/web2c/pdftex/latex.fmt
+INPUT thesis.tex
+OUTPUT thesis.log

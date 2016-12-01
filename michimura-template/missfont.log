@@ -1,0 +1,2 @@
+mktexpk --mfmode / --bdpi 600 --mag 1+129/600 --dpi 729 rml
+mktexpk --mfmode / --bdpi 600 --mag 2+236/600 --dpi 1436 gbm
